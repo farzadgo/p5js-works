@@ -27,7 +27,7 @@ function draw() {
     	terrain [y][x] = map(noise(yoff,xoff), 0, 1, -100, 100);
       xoff += 0.2;
     }
-    yoff += 0.2;
+    yoff += 0.3;
   }
   //console.log('Number of Columns are ' + terrain[0].length);
   //console.log('Number of Rows are ' + terrain.length);
