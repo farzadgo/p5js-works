@@ -32,7 +32,7 @@ function draw() {
   //console.log('Number of Columns are ' + terrain[0].length);
   //console.log('Number of Rows are ' + terrain.length);
 
-  background(0);
+  background(102, 0, 0);
   stroke(255);
   noFill();
   rotateX(PI/2.8);
@@ -47,7 +47,7 @@ function draw() {
     endShape();
   }
 
-
+  /*
  	for (y = 0; y < rows-1; y++){
     beginShape();
   	for (x = 0; x < cols; x++){
@@ -55,6 +55,6 @@ function draw() {
     }
     endShape();
   }
-
+  */
 
 }
