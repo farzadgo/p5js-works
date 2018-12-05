@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
 
-  flying -= 0.2;
+  flying -= 0.15;
   //terrain.length = rows;
   var yoff = flying;
   for (y = 0; y < rows; y++){
@@ -47,7 +47,7 @@ function draw() {
     endShape();
   }
 
-  /*
+  
  	for (y = 0; y < rows-1; y++){
     beginShape();
   	for (x = 0; x < cols; x++){
@@ -55,6 +55,6 @@ function draw() {
     }
     endShape();
   }
-  */
+  
 
 }
