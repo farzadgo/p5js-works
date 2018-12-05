@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
 
-  flying -= 0.3;
+  flying -= 0.2;
   //terrain.length = rows;
   var yoff = flying;
   for (y = 0; y < rows; y++){
@@ -35,7 +35,7 @@ function draw() {
   background(0);
   stroke(255);
   noFill();
-  rotateX(PI/3);
+  rotateX(PI/2.7);
   translate(-w/2, -h/2);
 
   for (y = 0; y < rows-1; y++){
