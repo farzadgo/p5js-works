@@ -17,17 +17,17 @@ function setup() {
 
 function draw() {
 
-  flying -= 0.3;
+  flying -= 0.2;
   //terrain.length = rows;
   var yoff = flying;
   for (y = 0; y < rows; y++){
     terrain [y] = [];
     var xoff = 0;
   	for (x = 0; x < cols; x++){
-    	terrain [y][x] = map(noise(yoff,xoff), 0, 1, -100, 100);
+    	terrain [y][x] = map(noise(yoff,xoff), 0, 1, -90, 90);
       xoff += 0.2;
     }
-    yoff += 0.3;
+    yoff += 0.2;
   }
   //console.log('Number of Columns are ' + terrain[0].length);
   //console.log('Number of Rows are ' + terrain.length);
@@ -35,7 +35,7 @@ function draw() {
   background(0);
   stroke(255);
   noFill();
-  rotateX(PI/3);
+  rotateX(PI/2.8);
   translate(-w/2, -h/2);
 
   for (y = 0; y < rows-1; y++){
@@ -47,7 +47,7 @@ function draw() {
     endShape();
   }
 
-  /*
+
  	for (y = 0; y < rows-1; y++){
     beginShape();
   	for (x = 0; x < cols; x++){
@@ -55,6 +55,6 @@ function draw() {
     }
     endShape();
   }
-  */
+
 
 }
