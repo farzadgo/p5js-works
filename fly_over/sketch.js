@@ -1,5 +1,5 @@
 let cols, rows;
-let scl = 20;
+let scl = 30;
 let w = 1200;
 let h = 1400;
 var terrain = [];
@@ -8,7 +8,7 @@ var terrain = [];
 var flying = 0;
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  createCanvas(800, 800, WEBGL);
 
   cols = w / scl;
   rows = h / scl;
@@ -32,7 +32,7 @@ function draw() {
   //console.log('Number of Columns are ' + terrain[0].length);
   //console.log('Number of Rows are ' + terrain.length);
 
-  background(102, 0, 0);
+  background(0, 0, 0);
   stroke(255);
   noFill();
   rotateX(PI/2.8);
