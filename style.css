@@ -10,6 +10,7 @@ body {
   color: white;
   overflow: hidden;
   background-color: black;
+  font-size: 20px;
 }
 a {
   color: inherit;
@@ -26,7 +27,7 @@ a:link, a:visited, #save {
 .menu a {
   display: block;
   margin-bottom: 1.2em;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
 }
 .p5Canvas {
   position: absolute;
@@ -40,7 +41,14 @@ a:link, a:visited, #save {
 .close {
   display: none;
   position: absolute;
-  top: 25px;
-  right: 30px;
-  font-size: 40px;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  padding: 30px;
+}
+.link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
 }
