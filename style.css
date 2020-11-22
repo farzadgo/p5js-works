@@ -40,7 +40,7 @@ a:link, a:visited, #save {
 .close {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 30px;
   font-size: 40px;
 }
