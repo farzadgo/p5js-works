@@ -8,7 +8,7 @@ function setup() {
   // button = createButton('save image');
   // button.position(500, 24);
   // button.mousePressed(download);
-  document.getElementById("save").addEventListener("click", download);
+  // document.getElementById("save").addEventListener("click", download);
 }
 
 function draw() {
@@ -46,3 +46,5 @@ function drawVCircle (x, y, d) {
     drawVCircle(x, y - d * moveFactor, d * moveFactor);
   }
 }
+
+let myp5 = new p5();

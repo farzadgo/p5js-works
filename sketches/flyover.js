@@ -8,7 +8,7 @@ var terrain = [];
 var flying = 0;
 
 function setup() {
-  createCanvas(800, 800, WEBGL);
+  createCanvas(600, 600, WEBGL);
 
   cols = w / scl;
   rows = h / scl;
@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
 
-  flying -= 0.2;
+  flying -= 0.06;
   //terrain.length = rows;
   var yoff = flying;
   for (y = 0; y < rows; y++){
@@ -58,3 +58,5 @@ function draw() {
   */
 
 }
+
+let myp5 = new p5();

@@ -1,13 +1,46 @@
-body {
-  padding: 0;
-  margin: 20;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: rgb(30, 30, 30)
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-a { font-size: 22px }
-a:link, a:visited, #save { color: rgb(0, 120, 215) }
-a:hover, #save:hover { color: hotpink }
-
-#save { cursor: pointer }
+body {
+  font-family: 'Courier', serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  background-color: black;
+}
+a {
+  color: inherit;
+}
+a:link, a:visited, #save {
+  text-decoration: none;
+}
+.menu {
+  display: block;
+  position: relative;
+  width: 200px;
+  padding: 30px;
+}
+.menu a {
+  display: block;
+  margin-bottom: 1.2em;
+  font-size: 1.4em;
+}
+.p5Canvas {
+  position: absolute;
+  height: calc(100vh - 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  border: 1px solid rgb(27, 27, 27);
+}
+.close {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+}

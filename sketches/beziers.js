@@ -2,7 +2,7 @@ let t;
 let bgCol = 0;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(600, 600);
   stroke(255, 18);
   noFill();
   t = 0;
@@ -28,3 +28,5 @@ function draw() {
 	background(bgCol);
   }
 }
+
+let myp5 = new p5();

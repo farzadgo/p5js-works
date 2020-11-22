@@ -4,15 +4,15 @@ let dSlider;
 let nSlider;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(600, 600);
   angleMode(DEGREES);
 
   nSlider = createSlider(1, 10, 1);
-  nSlider.position(624, 22);
+  nSlider.position(20, 40);
   nSlider.style('width', '180px');
 
   dSlider = createSlider(1, 180, 1);
-  dSlider.position(820, 22);
+  dSlider.position(20, 80);
   dSlider.style('width', '180px');
 }
 
@@ -48,3 +48,4 @@ function draw() {
   // endShape();
 }
 
+let myp5 = new p5();
