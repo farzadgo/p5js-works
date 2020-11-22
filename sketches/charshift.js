@@ -2,7 +2,7 @@ const str = `work in progrss.. what!?`;
 const words = str.split('');
 
 function preload() {
-  courier = loadFont('courbd.ttf');
+  courier = loadFont('./sketches/courbd.ttf');
 }
 
 function setup() {
@@ -15,7 +15,6 @@ function setup() {
     let ind = i + 2;
     textSize(32);
     text(e, (ind*22), (ind*2)+50);
-    // fill(255, 102, 153);
   });
 }
 
@@ -23,4 +22,4 @@ function draw() {
   noLoop();
 }
 
-
+let myp5 = new p5();
