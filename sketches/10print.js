@@ -1,12 +1,11 @@
 let x = 0;
 let y = 0;
 let spacing = 30;
-
-console.log(x, y, spacing);
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
   console.log('setup function loaded');
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   background(0);
 }
 
@@ -14,7 +13,7 @@ function draw() {
   stroke(255);
   strokeWeight(4);
   noFill();
-  console.log('repeat');
+  
   if (random(1) < 0.85) {
     line(x, y, x + spacing, y + spacing);
   } else {

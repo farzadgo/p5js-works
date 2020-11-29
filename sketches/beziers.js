@@ -1,8 +1,9 @@
 let t;
 let bgCol = 0;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   stroke(255, 18);
   noFill();
   t = 0;

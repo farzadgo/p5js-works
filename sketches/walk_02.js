@@ -3,9 +3,10 @@ let l, w, r;
 const lf = 50;
 let woff = 0.5;
 let sw = 4;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   x1 = width / 2;
   y1 = height / 2;
   w = floor(random(2));
@@ -28,7 +29,7 @@ function draw() {
   }
   woff = woff + 0.1;
   let n = noise(woff) * sw;
-  console.log(n, x2, y2);
+  // console.log(n, x2, y2);
   noFill();
   stroke(255, 200);
   strokeWeight(n);

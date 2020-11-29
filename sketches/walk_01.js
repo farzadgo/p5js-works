@@ -1,8 +1,9 @@
 let x1, x2, y1, y2;
 let l;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   x1 = width / 2;
   y1 = height / 2;
   background(0);

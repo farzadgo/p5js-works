@@ -5,12 +5,10 @@
 }
 body {
   font-family: 'Courier', serif;
-  font-size: 14px;
   font-weight: bold;
   color: white;
   overflow: hidden;
   background-color: black;
-  font-size: 20px;
 }
 a {
   color: inherit;
@@ -20,14 +18,12 @@ a:link, a:visited, #save {
 }
 .menu {
   display: block;
-  position: relative;
   width: 200px;
-  padding: 30px;
+  padding: var(--my-padding);
 }
 .menu a {
   display: block;
   margin-bottom: 1.2em;
-  /* font-size: 1.4em; */
 }
 .p5Canvas {
   position: absolute;
@@ -43,12 +39,18 @@ a:link, a:visited, #save {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 36px;
-  padding: 30px;
+  font-size: 1.4em;
+  padding: var(--my-padding);
 }
 .link {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 30px;
+  padding: var(--my-padding);
+}
+@media (min-width: 600px) {
+  :root { --my-padding: 30px; }
+}
+@media (max-width: 600px) {
+  :root { --my-padding: 20px; }
 }

@@ -3,16 +3,13 @@ let scl = 30;
 let w = 1200;
 let h = 1400;
 var terrain = [];
-//or
-//var terrain = new Array(rows);
 var flying = 0;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
-
+  createCanvas(myW, myW, WEBGL);
   cols = w / scl;
   rows = h / scl;
-
 }
 
 function draw() {

@@ -1,12 +1,13 @@
 const str = `work in progrss.. what!?`;
 const words = str.split('');
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function preload() {
   courier = loadFont('./sketches/courbd.ttf');
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   stroke(255);
   strokeWeight(2);
   textFont(courier);

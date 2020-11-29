@@ -24,6 +24,7 @@ const menuItems = document.querySelectorAll('.mitem');
 const closeBtn = document.querySelector('.close');
 const canvas = document.querySelector('.p5Canvas');
 
+
 menuItems.forEach((e, i) => {
   e.addEventListener('click', () => {
     let uri = './sketches/' + e.id + '.js';

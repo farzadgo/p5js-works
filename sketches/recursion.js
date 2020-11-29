@@ -2,9 +2,10 @@ let x = 300;
 let y = 300;
 let d = 1200;
 let moveFactor = 0.75;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   // button = createButton('save image');
   // button.position(500, 24);
   // button.mousePressed(download);
@@ -27,7 +28,6 @@ function download() {
   return false;
 }
 
-// butun olay burasi
 function drawHCircle (x, y, d) {
   fill(random(0, 255), random(0, 255), random(0,255), 80);
   ellipse(x, y, d);

@@ -2,6 +2,7 @@ let n = 6;
 let d = 97;
 let dSlider;
 let nSlider;
+let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
 
 function setup() {
   createCanvas(600, 600);

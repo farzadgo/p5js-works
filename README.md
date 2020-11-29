@@ -1,7 +1,8 @@
-### Following are just some of my tryouts that are inspired from various sources on web
+### In this page you can see some of my p5js sketches
 
 ## <a href="https://farzadgo.github.io/p5js-works" target="_blank">farzadgo p5 sketches</a>
 
-***
+References
 
-You can find the related _references_ or _links_ along with the sketches.
+- [The Coding Train](https://www.youtube.com/user/shiffman)
+- [Perlin noise and p5js](https://genekogan.com/code/p5js-perlin-noise/)
