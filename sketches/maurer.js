@@ -3,9 +3,10 @@ let d = 97;
 let dSlider;
 let nSlider;
 let myW = window.innerWidth > 600 ? 600 : window.innerWidth - 20;
+let myR = (myW / 2) - 10;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(myW, myW);
   angleMode(DEGREES);
 
   nSlider = createSlider(1, 10, 1);
@@ -29,7 +30,7 @@ function draw() {
   beginShape();
   for (let i = 0; i < 361; i++) {
     let k = i * d;
-    let r = 300 * sin(n*k);
+    let r = myR * sin(n*k);
     let x = r * cos(k);
     let y = r * sin(k);
     vertex(x,y);
