@@ -1,3 +1,8 @@
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.mitem');
+const controls = document.querySelector('.controls');
+let currentId;
+
 class ScriptLoader {
   constructor(script) {
     this.script = script;
@@ -14,42 +19,41 @@ class ScriptLoader {
   }
 }
 
-// const scriptRemover = () => {
-//   let head = document.querySelector('head');
-//   head.removeChild(head.lastChild);
-// }
 
-const menu = document.querySelector('.menu');
-const menuItems = document.querySelectorAll('.mitem');
-const closeBtn = document.querySelector('.close');
-const canvas = document.querySelector('.p5Canvas');
+const controlsLoader = () => {
+  // CREATE BUTTONS
+  const closeBtn = document.createElement('button');
+  closeBtn.innerHTML = '<i class="material-icons">close</i>';
+  closeBtn.classList.add('btn', 'close-btn');
+  controls.appendChild(closeBtn);
+
+  const redoBtn = document.createElement('button');
+  redoBtn.innerHTML = '<i class="material-icons">autorenew</i>';
+  redoBtn.classList.add('btn', 'redo-btn');
+  controls.appendChild(redoBtn);
+
+  const linkBtn = document.createElement('button');
+  linkBtn.innerHTML = '<i class="material-icons">code</i>';
+  linkBtn.classList.add('btn', 'link-btn');
+  controls.appendChild(linkBtn);
+
+  // LISTENERS
+  closeBtn.addEventListener('click', () => location.reload());
+  redoBtn.addEventListener('click', () => console.log('reset code required!'));
+  linkBtn.addEventListener('click', () => window.open(`https://github.com/farzadgo/p5js-works/blob/master/sketches/${currentId}.js`, '_blank'));
+}
 
 
-menuItems.forEach((e, i) => {
+menuItems.forEach(e => {
   e.addEventListener('click', () => {
-    let uri = './sketches/' + e.id + '.js';
-    // console.log(uri);
+    currentId = e.id;
+    let uri = './sketches/' + currentId + '.js';
     const loader = new ScriptLoader(uri);
-    // console.log(loader);
     loader.load().
       then(e => console.log(e)).
       catch(e => console.error(e));
-
     menu.style.display = "none";
-    closeBtn.style.display = "block";
+    controlsLoader();
   });
 });
-
-closeBtn.addEventListener('click', () => {
-  // scriptRemover();
-  // menu.style.display = "block";
-  // closeBtn.style.display = "none";
-  location.reload();
-});
-
-
-
-
-
-
 

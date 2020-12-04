@@ -16,6 +16,10 @@ a {
 a:link, a:visited, #save {
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
+/* ------------------------------------------------------- */
 .menu {
   display: block;
   width: 200px;
@@ -34,13 +38,23 @@ a:link, a:visited, #save {
   box-sizing: content-box;
   border: 1px solid rgb(27, 27, 27);
 }
-.close {
-  display: none;
+.controls {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 1.4em;
-  padding: var(--my-padding);
+  padding: 30px;
+}
+.btn {
+  display: block;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.controls i {
+  font-size: 2em;
+  color: white;
 }
 .link {
   position: absolute;
@@ -48,6 +62,7 @@ a:link, a:visited, #save {
   right: 0;
   padding: var(--my-padding);
 }
+/* ------------------------------------------------------- */
 @media (min-width: 600px) {
   :root { --my-padding: 30px; }
 }
