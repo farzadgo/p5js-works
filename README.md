@@ -1,6 +1,6 @@
-### In this page you can see some of my p5js sketches
+# In this page you can see some of my p5js sketches
 
-## <a href="https://farzadgo.github.io/p5js-works" target="_blank">farzadgo p5 sketches</a>
+## <a href="https://farzadgo.github.io/p5js-works" target="_blank">my p5.js sketches</a>
 
 References
 
